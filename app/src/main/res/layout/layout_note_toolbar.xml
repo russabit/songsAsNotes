@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:weightSum="100"
+    android:gravity="center_vertical">
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="10"
+        android:id="@+id/backarrow_container"
+        android:visibility="visible">
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_arrow_back_black_24dp"
+            android:background="?attr/selectableItemBackground"
+            android:id="@+id/toolbar_backarrow"
+            android:layout_centerInParent="true">
+
+        </androidx.appcompat.widget.AppCompatImageButton>
+
+    </RelativeLayout><RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="10"
+        android:id="@+id/checkmark_container"
+        android:visibility="gone">
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_done_black_24dp"
+            android:background="?attr/selectableItemBackground"
+            android:id="@+id/toolbar_checkmark"
+            android:layout_centerInParent="true">
+
+        </androidx.appcompat.widget.AppCompatImageButton>
+
+    </RelativeLayout>
+    
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="85"
+        android:textSize="23dp"
+        android:id="@+id/note_text_title"
+        android:text="TextTitle"
+        android:textColor="@android:color/black"
+        android:layout_marginStart="15dp"
+        android:visibility="visible">
+
+    </TextView>
+
+    <EditText
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="85"
+        android:textSize="23dp"
+        android:id="@+id/note_edit_title"
+        android:text="EditText"
+        android:textColor="@android:color/black"
+        android:layout_marginStart="15dp"
+        android:visibility="gone"
+        android:background="@android:color/white"
+        android:padding="4dp"
+        android:imeOptions="flagNoExtractUi">
+
+    </EditText>
+
+
+
+</LinearLayout>
